@@ -1,21 +1,26 @@
+import hero from './illustration-hero.svg';
+import React, { useState } from 'react';
+import ImageCard from './components/ImageCard';
+
 const App = () => {
+
+  const [images] = useState([hero]);
+
   return (
-    <>
-      <div>
-        Order Summary
-        You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!
-        Annual Plan
-        $59.99/year
-        Change
-        Proceed to Payment
-        Cancel Order
-      </div>
-      <div class="attribution">
+
+    <div className='bg-container-background bg-contain'>
+      
+      {images.map(image => (
+          <ImageCard key={image.id} image={image} />
+      ))}
+      
+      <div className="attribution object-bottom">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Laura Salinas</a>.
       </div>
-      </>
+      
+    </div>
+
   );
 }
 
