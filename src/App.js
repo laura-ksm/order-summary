@@ -16,7 +16,7 @@ const App = () => {
       ))}
       <div className="attribution object-bottom p-5">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Laura Salinas</a>.
+        Coded by <a href="https://github.com/laura-ksm">Laura Salinas</a>.
       </div>
     </div>
   );
